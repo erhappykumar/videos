@@ -10,7 +10,7 @@ function Video({channel,title,time,url,keys}) {
       
       
      <div className="raper"><br />
-     <iframe src={url} className="img" frameborder="0" key={keys}></iframe></div><br/><button className="button"><a href={url}>Subscribe</a></button><br/> channel {channel}<br/>Title {title}<br/>Time {time}
+     <iframe src={url} className="img" frameborder="0" key={keys}></iframe></div><br/><button className="button"><a href={url}>Subscribe</a></button><br/> Channel {channel}<br/>Title {title}<br/>Time {time}
      </div>
 
   )
