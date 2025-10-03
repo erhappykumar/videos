@@ -1552,6 +1552,8 @@ function App() {
 //     }
 // ]
   return (
+    <>
+    <h1 style={{textAlign:"center",fontSize:"5vw",fontFamily:"sans-serif" ,color:"lightblue"}}>MERN VIDEO</h1>
     <div className="d">
 
      
@@ -1559,7 +1561,7 @@ function App() {
       
       
      </div>
-   
+   </>
   )
 }
 
