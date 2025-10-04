@@ -791,7 +791,7 @@ function App() {
     <div className="d">
 
      
-      {Items.slice(Math.min(Math.max(lazy-10,0),Items.length-6),Math.min(lazy+10,Items.length-1)).map((item,index)=><Video inView channel={item.channel} title={item.title} time={item.time} url={item.url} keys={item.id} key={item.id} Lazy={setLazy} Wait={setWait} wait={wait}></Video>)}
+      {Items.slice(Math.min(Math.max(lazy-50,0),Items.length-6),Math.min(lazy+50,Items.length-1)).map((item,index)=><Video inView channel={item.channel} title={item.title} time={item.time} url={item.url} keys={item.id} key={item.id} Lazy={setLazy} Wait={setWait} wait={wait}></Video>)}
       
       
      </div>
