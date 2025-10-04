@@ -18,7 +18,7 @@ function Video({ channel, title, time, url, keys, Lazy, Wait, wait }) {
   }
   return (
     
-      <div className="raper" onMouseOver={mouseover} id={keys}>
+      <div className="raper" onTouchStart={mouseover} onMouseOver={mouseover} id={keys}>
         <br />
         <iframe src={url} className="img" key={keys}></iframe>
         <br /><br/>
