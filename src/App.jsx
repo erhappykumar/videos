@@ -1,7 +1,8 @@
  import Video from "./component/Video.jsx"
  import Items from "./component/Items.jsx";
- import React from "react";
- import { useInView } from "react-intersection-observer";
+ import React, { useState } from "react";
+
+
 // const Items= 
 // [
 //     {
@@ -779,17 +780,18 @@
 
 
 function App() {
- const { ref, inView, entry } = useInView({
-    /* Optional options */
-    threshold: 0,
-  });
+  const [lazy,setLazy]=useState(0)
+  const [wait,setWait]=useState(0)
+  
+  
+
   return (
     <>
     <h1 style={{textAlign:"center",fontSize:"5vw",fontFamily:"sans-serif" ,color:"lightblue"}}>MERN VIDEO</h1>
-    <div ref={ref} className="d">
+    <div className="d">
 
      
-      {Items.map((item,index)=><Video inView channel={item.channel} title={item.title} time={item.time} url={item.url} keys={item.id} key={item.id}></Video>)}
+      {Items.slice(Math.min(Math.max(lazy-10,0),Items.length-6),Math.min(lazy+10,Items.length-1)).map((item,index)=><Video inView channel={item.channel} title={item.title} time={item.time} url={item.url} keys={item.id} key={item.id} Lazy={setLazy} Wait={setWait} wait={wait}></Video>)}
       
       
      </div>
@@ -797,4 +799,4 @@ function App() {
   )
 }
 
-export default App;
+export default React.memo(App);
