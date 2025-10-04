@@ -1,12 +1,17 @@
  .d{
   display: flex;margin-left: 0%;flex-wrap: wrap;font-size: 15px;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
- justify-content:space-evenly;
+ justify-content:space-evenly;}
  *{margin: 0%;padding: 0%;}
  .raper{
 width:350px;height:400px;
   word-wrap: break-word;
+  position:static
+  
 }
- }
+.raper:hover{
+  position: static;
+}
+
  .img{
   width:310px;height:200px;margin-right: 0.5vw;border-radius: 20px;background:  linear-gradient(hsl(219, 52%, 61%), hsl(135, 90%, 69%), rgb(0, 255, 55));;padding: 0.3%;border: rgba(6, 156, 149, 0) solid ;box-shadow: 6px 6px 10px 10px rgb(13, 61, 13);
  }
@@ -25,4 +30,6 @@ width:350px;height:400px;
  /* a::after{content:url("src/ConfettiGif.gif") ;} */
 
  .btn{color: rgb(234, 0, 255);}
- body{background:linear-gradient(rgba(47, 48, 121, 0.89),rgba(25, 71, 52, 0.473),rgb(20, 90, 122))}
+ body{background:linear-gradient(rgba(47, 48, 121, 0.89),rgba(25, 71, 52, 0.473),rgb(20, 90, 122))
+ ;
+}

@@ -8,7 +8,9 @@ function Video({ channel, title, time, url, keys, Lazy, Wait, wait }) {
   function mouseover(e) {
     console.log(Number(e.target.id),e.target.id);
     if (typeof Number(e.target.id) === "number"&&e.target.id!="" && wait == 0) {
-      Lazy(Number(Number(e.target.id))); Wait(1);
+      let x=Number(e.target.id);
+      x=x+(12-(x-Math.round(x/12)*12)/*number needed to next round*/);
+      Lazy(x); Wait(1);
       setTimeout(() => {
         Wait(0);
       }, 200);
