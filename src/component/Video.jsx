@@ -11,7 +11,7 @@ function Video({ channel, title, time, url, keys, Lazy, Wait, wait }) {
       Lazy(Number(Number(e.target.id))); Wait(1);
       setTimeout(() => {
         Wait(0);
-      }, 2000);
+      }, 200);
     }
 
     setXstate(Math.random());
