@@ -15,14 +15,41 @@ function Video({ channel, title, time, url, keys, Lazy, Wait, wait }) {
         Wait(0);
       }, 200);
     }
-
+    if (typeof Number(e.target.id) === "number"&&e.target.id!="")
+    {
+      e.target.classList.remove("blur")
+      let id=e.target.id;
+      for(let k=Math.max(0,id-10);k<id+10;k++)
+         {
+   console.log(k,id)
+   if(k!=id){
+   document.getElementById(k).classList.add("blur")}
+           }
+   
+    }
     setXstate(Math.random());
+  }
+  function mouseout(e){
+
+if (typeof Number(e.target.id) === "number"&&e.target.id!="")
+    {
+      e.target.classList.remove("blur")
+      let id=e.target.id;
+      for(let k=Math.max(0,id-10);k<id+10;k++)
+         {
+   console.log(k,id)
+   if(k!=id){
+   document.getElementById(k).classList.remove("blur")}
+           }
+   
+    }
+
   }
   return (
     
-      <div className="raper" onTouchStart={mouseover} onMouseOver={mouseover} id={keys}>
+      <div className="raper" >
         <br />
-        <iframe src={url} className="img" key={keys}></iframe>
+        <iframe src={url} id={keys} className="img"  onTouchStart={mouseover} onMouseOver={mouseover}  onMouseOut={mouseout} key={keys}></iframe>
         <br /><br/>
         <button className="button">
           <a href={url}>Subscribe</a>

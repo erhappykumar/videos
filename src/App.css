@@ -1,6 +1,11 @@
  .d{
   display: flex;margin-left: 0%;flex-wrap: wrap;font-size: 15px;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
- justify-content:space-evenly;}
+ justify-content:space-evenly;
+
+
+} 
+
+
  *{margin: 0%;padding: 0%;}
  .raper{
 width:350px;height:400px;
@@ -21,6 +26,11 @@ width:350px;height:400px;
 
  /* box-shadow:20px 30px 100px 100px rgb(0, 255, 255); */
 }
+
+.blur{
+
+  filter: blur(5px);
+}
   .button{background-color: rgb(112, 92, 201);width:fit-content;;height:fit-content;font-size:20PX;border: 10PX solid transparent;border-radius: 42px; ;color:aliceblue} 
  a{text-decoration: none;color:white}
  a:hover{color: black;transition: all 0s ease;}
@@ -31,5 +41,5 @@ width:350px;height:400px;
 
  .btn{color: rgb(234, 0, 255);}
  body{background:linear-gradient(rgba(47, 48, 121, 0.89),rgba(25, 71, 52, 0.473),rgb(20, 90, 122))
- ;
+ ;z-index: -1;
 }
