@@ -39,7 +39,7 @@ width:350px;height:400px;
  content:url("src/ConfettiGif1.gif") ;width: 2vw;height: 2vw;position: absolute;} */
  /* a::after{content:url("src/ConfettiGif.gif") ;} */
 
- .btn{color: rgb(234, 0, 255);}
+ .btn{color: rgb(203, 26, 219);}
  body{background:linear-gradient(rgba(47, 48, 121, 0.89),rgba(25, 71, 52, 0.473),rgb(20, 90, 122))
  ;
 }
